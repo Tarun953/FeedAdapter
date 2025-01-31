@@ -27,5 +27,14 @@ struct TradeMessage
 {
 public:
     StreamHeader streamHeader_;
-    char mssgType
+    char mssgType_;
+    long timestamp_;
+    double buyOrderID_;
+    double sellOrderID_;
+    int token_;
+    int tradePrice_;
+    int quantity_;
+    // short checksum_;
+
+    // After getting the TradeMessage we have to modify the book accordingly.
 };
